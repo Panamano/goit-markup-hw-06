@@ -440,7 +440,7 @@
           <form class="footer-form">
             <label class="footer-newsletter-label">
               Zapisz się do newslettera
-              <input class="footer-newsletter" type="email" name="email" />
+              <input class="footer-newsletter" type="email" name="email" placeholder="E-mail" />
             </label>
             <button class="footer-newsletter-button" type="submit">
               Zapisz się
@@ -459,37 +459,37 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h3>Zostaw swoje dane w formularzu poniżej</h3>
-        <form>
-          <label>
+        <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
+        <form class="modal__form">
+          <label class="modal__label">
             Imię
             <input class="modal-input-box" type="text" name="name" />
             <svg id="person">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
             Telefon
             <input class="modal-input-box" type="tel" name="phone" />
             <svg id="phone">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
             Email
             <input class="modal-input-box" type="email" name="email" />
             <svg id="email">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
            Komentarz
             <input class="modal-input-text-box" type="text" name="coment" placeholder="Wprowadź tekst" />
           </label>
           <label>
            
              <input type="checkbox" name="accept" value="accept" />
-             Oświadczam iż akceptuję <span></span>Regulamin</span> i <span></span>Politykę Prywatności</span>.
+             Oświadczam iż akceptuję <a href="#regulamin">Regulamin</a> i <a href="#policy">Politykę Prywatności</a>.
            </label>
            <button class="footer-newsletter-button" type="submit">
             Wyślij

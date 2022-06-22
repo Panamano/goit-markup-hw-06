@@ -674,6 +674,14 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-newsletter::placeholder {
+  text-indent: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
 }
 .footer-newsletter-label {
   display: flex;
@@ -751,6 +759,30 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-gray);
+  margin: 40px 0 12px;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal__label > svg {
+  position: absolute;
+  top: 36px;
+  left: 15px;
+}
 .close-button {
   position: absolute;
   top: 8px;
@@ -769,46 +801,58 @@ header {
   pointer-events: none;
 }
 .modal-input-box {
+  display: block;
+  text-indent: 42px;
+  margin: 4px 0 10px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.modal-input-box:focus {
+  border: 1px solid var(--blue);
+}
+.modal-input-box:hover {
+  border: 1px solid var(--blue);
+  fill: var(--blue);
+}
 .modal-input-text-box {
+  text-align: start;
+  margin: 4px 0 10px;
   width: 448px;
   height: 120px;
-  left: 576px;
-  top: 518px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-#person {
-  position: absolute;
+ #person {
+  /* position: absolute; */
+  /* transform: translate(15px, -25px); */
   width: 12px;
   height: 12px;
-  left: 16.67%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 16.67%;
+  /* left: 15px;
+  top:14px;
+  bottom: 14px; */
   fill: var(--font-gray);
 }
 #phone {
-  position: absolute;
+  /* position: absolute; */
+  /* transform: translate(15px, -30px); */
   width: 13px;
   height: 13px;
-  left: 12.61%;
+  /* left: 12.61%;
   right: 15.17%;
   top: 12.54%;
-  bottom: 15.24%;
+  bottom: 15.24%; */
   fill: var(--font-gray);
 }
 #email {
+  /* transform: translate(15px, -30px); */
   width: 15px;
   height: 12px;
-  position: absolute;
-  left: 8.33%;
+  /* position: absolute; */
+  /* left: 8.33%;
   right: 8.33%;
   top: 16.67%;
-  bottom: 16.67%;
+  bottom: 16.67%; */
   fill: var(--font-gray);
 }
