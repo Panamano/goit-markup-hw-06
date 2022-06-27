@@ -819,16 +819,40 @@ header {
   cursor: pointer;
 }
 .modal__policy {
+  display: flex;
+  align-items: center;
   margin-top: 10px;
+  justify-content: space-around;
 }
 .modal__checkbox {
+  display: block;
   width: 16px;
   height: 15px;
-  border-radius: 10px;
+  outline: none;
+  appearance: none;
+  background: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal__checkbox--text {
+  display: block;
+  text-indent: 8px;
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.modal__checkbox:hover {
+  cursor: pointer;
 }
 .modal__checkbox:checked {
   background-color: var(--blue);
-  background: url(../images/con-check.svg);
+  appearance: none;
+  background: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: var(--blue);
 }
 .modal__label > svg {
   position: absolute;
@@ -875,7 +899,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__icon--person {
+/* .modal__icon--person {
   width: 12px;
   height: 12px;
 }
@@ -886,4 +910,4 @@ header {
 .modal__icon--email {
   width: 15px;
   height: 12px;
-}
+} */
