@@ -38,14 +38,14 @@ header {
   align-items: center;
   height: 80px;
 }
-.header-navigation {
+.header__navigation {
   display: flex;
   top: 32px;
   margin-right: 345px;
   align-items: center;
   list-style: none;
 }
-.header-contacts {
+.header__contacts {
   display: flex;
   text-align: center;
   align-items: center;
@@ -70,7 +70,7 @@ header {
 .header-contacts-with-icon:last-child {
   margin-right: 0;
 }
-.navigation-logo {
+.header__logo {
   display: block;
   text-decoration: none;
   width: 145px;
@@ -89,7 +89,7 @@ header {
 .navigation-logo > span {
   color: var(--font-gray);
 }
-.link1 {
+.header__link1 {
   display: block;
   font-style: normal;
   font-weight: 500;
@@ -103,13 +103,13 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link1:hover {
+.header__link1:hover {
   color: var(--blue);
 }
-.link1:focus {
+.header__link1:focus {
   color: var(--blue);
 }
-.link2 {
+.header__link2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,24 +125,24 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link2 svg {
+.header__link2 svg {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link2:hover {
+.header__link2:hover {
   color: var(--blue);
 }
-.link2:hover svg {
+.header__link2:hover svg {
   fill: var(--blue);
 }
-.link2:focus {
+.header__link2:focus {
   color: var(--blue);
 }
-.link2:focus svg {
+.header__link2:focus svg {
   fill: var(--blue);
 }
-.header-navigation-item {
+.header__item {
   margin-left: 23px;
   margin-right: 23px;
 }
@@ -417,7 +417,7 @@ header {
   fill: var(--blue);
   border: 1px solid var(--blue);
 }
-.button {
+.portfolio__button {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -432,29 +432,29 @@ header {
   cursor: pointer;
   background-color: var(--button-gray);
   border-radius: 4px;
-  transition-property: box-shadow;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover {
+.portfolio__button:hover {
   color: #fff;
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button:focus {
+.portfolio__button:focus {
   color: #fff;
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-buttons {
+.portfolio__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
 }
-.main-cards {
+.portfolio__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -852,7 +852,7 @@ header {
   background: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
-  fill: var(--blue);
+  /* fill: var(--blue); */
 }
 .modal__label > svg {
   position: absolute;
