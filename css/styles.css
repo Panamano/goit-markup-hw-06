@@ -899,7 +899,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal__icon--person {
+.modal__icon--person {
   width: 12px;
   height: 12px;
 }
@@ -910,4 +910,4 @@ header {
 .modal__icon--email {
   width: 15px;
   height: 12px;
-} */
+}
