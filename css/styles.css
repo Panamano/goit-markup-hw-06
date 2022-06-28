@@ -856,7 +856,7 @@ header {
 }
 .modal__label > svg {
   position: absolute;
-  top: 36px;
+  top: 33px;
   left: 15px;
 }
 .close-button {
@@ -900,14 +900,14 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon--person {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
 }
 .modal__icon--phone {
-  width: 13px;
-  height: 13px;
+  width: 19px;
+  height: 19px;
 }
 .modal__icon--email {
-  width: 15px;
-  height: 12px;
+  width: 21px;
+  height: 18px;
 }
