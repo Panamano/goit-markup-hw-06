@@ -86,7 +86,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--blue);
 }
-.navigation-logo > span {
+.header__logo > span {
   color: var(--font-gray);
 }
 .header__link1 {
